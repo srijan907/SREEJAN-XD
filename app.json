@@ -5,9 +5,15 @@
   "logo": "https://your-logo-url.com/logo.png",
   "keywords": ["whatsapp", "bot", "nodejs", "md"],
   "buildpacks": [
-    { "url": "heroku/nodejs" }
-  ],
-  "env": {
+        {
+            "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+        }
+     ],
+  "stack": "heroku-24"
+}
+  
+
+    "env": {
     "SESSION_ID": {
       "description": "Your WhatsApp Session ID",
       "value": "KHAN-MD~frgAxSwL#OEnUV7-DjZ6zMdAqjw0Gm7ip22FgKAh738iez40JWsY"
