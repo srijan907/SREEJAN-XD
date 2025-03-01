@@ -1,0 +1,54 @@
+{
+  "name": "SREEJAN-XD WhatsApp Bot",
+  "description": "A Multi-Device WhatsApp Bot with Advanced Features",
+  "repository": "https://github.com/srijan907/SREEJAN-XD",
+  "logo": "https://node-js-sample.herokuapp.com/node.png",
+  "keywords": ["whatsapp", "bot", "baileys", "multi-device"],
+  "env": {
+    "SESSION_ID": {
+      "description": "Your WhatsApp Session ID",
+      "required": true
+    },
+    "OWNER_NUMBER": {
+      "description": "Bot Owner Number (without +)",
+      "required": true
+    },
+    "SUDO": {
+      "description": "Sudo User Numbers (comma-separated)",
+      "value": "918123456789"
+    },
+    "BOT_NAME": {
+      "description": "Your Bot's Name",
+      "value": "SREEJAN-XD"
+    },
+    "BOT_MODE": {
+      "description": "Set to 'public' or 'private'",
+      "value": "public"
+    },
+    "AUTO_STATUS_VIEW": {
+      "description": "Enable Auto Status View (true/false)",
+      "value": "true"
+    },
+    "AUTO_STATUS_REACT": {
+      "description": "Enable Auto React on Status (true/false)",
+      "value": "true"
+    },
+    "HEROKU_ENABLED": {
+      "description": "Enable Heroku Deployment (true/false)",
+      "value": "true"
+    },
+    "HEROKU_APP_NAME": {
+      "description": "Heroku App Name",
+      "value": ""
+    },
+    "HEROKU_API_KEY": {
+      "description": "Heroku API Key",
+      "value": ""
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
