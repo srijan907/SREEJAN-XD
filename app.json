@@ -15,7 +15,11 @@
     },
     "SUDO": {
       "description": "Sudo User Numbers (comma-separated)",
-      "value": "918123456789"
+      "value": "917439382677"
+      },
+      "PREFIX": {
+      "description": "Bot command prefix",
+      "value": "."
     },
     "BOT_NAME": {
       "description": "Your Bot's Name",
