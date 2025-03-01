@@ -2,18 +2,14 @@
   "name": "SREEJAN-XD",
   "description": "A WhatsApp MD Bot",
   "repository": "https://github.com/srijan907/SREEJAN-XD",
-  "logo": "https://your-logo-url.com/logo.png",
   "keywords": ["whatsapp", "bot", "nodejs", "md"],
   "buildpacks": [
-        {
-            "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
-        }
-     ],
-  "stack": "heroku-24"
-}
-  
-
-    "env": {
+    { "url": "heroku/nodejs" }
+  ],
+  "scripts": {
+    "postdeploy": "echo 'Deployment completed successfully!'"
+  },
+  "env": {
     "SESSION_ID": {
       "description": "Your WhatsApp Session ID",
       "value": "KHAN-MD~frgAxSwL#OEnUV7-DjZ6zMdAqjw0Gm7ip22FgKAh738iez40JWsY"
@@ -23,43 +19,12 @@
       "value": "."
     },
     "OWNER_NUMBER": {
-      "description": "Your WhatsApp number (with country code)",
+      "description": "Your WhatsApp number with country code",
       "value": "91XXXXXXXXXX"
     },
     "BOT_NAME": {
       "description": "Your bot's display name",
       "value": "SREEJAN-XD BOT"
-    },
-    "AUTO_STATUS_VIEW": {
-      "description": "Enable or disable auto status view (true/false)",
-      "value": "true"
-    },
-    "AUTO_STATUS_REACT": {
-      "description": "Enable or disable auto status react (true/false)",
-      "value": "true"
-    },
-    "STATUS_REACT_EMOJI": {
-      "description": "Emoji for auto status react",
-      "value": "🔥"
-    },
-    "LANGUAGE": {
-      "description": "Set bot language (en/bn/hi)",
-      "value": "en"
-    },
-    "ANTI_BOT": {
-      "description": "Enable or disable anti-bot feature (true/false)",
-      "value": "false"
-    },
-    "LOG_CHAT": {
-      "description": "Chat ID where logs will be sent",
-      "value": "120363XXXXXX@g.us"
-    },
-    "HEROKU_API_KEY": {
-      "description": "Your Heroku API Key for auto updates",
-      "value": "your_heroku_api_key"
-    },
-    "HEROKU_APP_NAME": {
-      "description": "Your Heroku app name",
-      "value": "sreejan-whatsapp-bot"
     }
   }
+}
