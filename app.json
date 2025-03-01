@@ -1,58 +1,60 @@
 {
-  "name": "SREEJAN-XD WhatsApp Bot",
-  "description": "A Multi-Device WhatsApp Bot with Advanced Features",
+  "name": "SREEJAN-XD",
+  "description": "A WhatsApp MD Bot",
   "repository": "https://github.com/srijan907/SREEJAN-XD",
-  "logo": "https://node-js-sample.herokuapp.com/node.png",
-  "keywords": ["whatsapp", "bot", "baileys", "multi-device"],
+  "logo": "https://your-logo-url.com/logo.png",
+  "keywords": ["whatsapp", "bot", "nodejs", "md"],
+  "buildpacks": [
+    { "url": "heroku/nodejs" }
+  ],
   "env": {
     "SESSION_ID": {
       "description": "Your WhatsApp Session ID",
-      "required": true
+      "value": "KHAN-MD~frgAxSwL#OEnUV7-DjZ6zMdAqjw0Gm7ip22FgKAh738iez40JWsY"
     },
-    "OWNER_NUMBER": {
-      "description": "Bot Owner Number (without +)",
-      "required": true
-    },
-    "SUDO": {
-      "description": "Sudo User Numbers (comma-separated)",
-      "value": "917439382677"
-      },
-      "PREFIX": {
+    "PREFIX": {
       "description": "Bot command prefix",
       "value": "."
     },
-    "BOT_NAME": {
-      "description": "Your Bot's Name",
-      "value": "SREEJAN-XD"
+    "OWNER_NUMBER": {
+      "description": "Your WhatsApp number (with country code)",
+      "value": "91XXXXXXXXXX"
     },
-    "BOT_MODE": {
-      "description": "Set to 'public' or 'private'",
-      "value": "public"
+    "BOT_NAME": {
+      "description": "Your bot's display name",
+      "value": "SREEJAN-XD BOT"
     },
     "AUTO_STATUS_VIEW": {
-      "description": "Enable Auto Status View (true/false)",
+      "description": "Enable or disable auto status view (true/false)",
       "value": "true"
     },
     "AUTO_STATUS_REACT": {
-      "description": "Enable Auto React on Status (true/false)",
+      "description": "Enable or disable auto status react (true/false)",
       "value": "true"
     },
-    "HEROKU_ENABLED": {
-      "description": "Enable Heroku Deployment (true/false)",
-      "value": "true"
+    "STATUS_REACT_EMOJI": {
+      "description": "Emoji for auto status react",
+      "value": "🔥"
     },
-    "HEROKU_APP_NAME": {
-      "description": "Heroku App Name",
-      "value": ""
+    "LANGUAGE": {
+      "description": "Set bot language (en/bn/hi)",
+      "value": "en"
+    },
+    "ANTI_BOT": {
+      "description": "Enable or disable anti-bot feature (true/false)",
+      "value": "false"
+    },
+    "LOG_CHAT": {
+      "description": "Chat ID where logs will be sent",
+      "value": "120363XXXXXX@g.us"
     },
     "HEROKU_API_KEY": {
-      "description": "Heroku API Key",
-      "value": ""
+      "description": "Your Heroku API Key for auto updates",
+      "value": "your_heroku_api_key"
+    },
+    "HEROKU_APP_NAME": {
+      "description": "Your Heroku app name",
+      "value": "sreejan-whatsapp-bot"
     }
-  },
-  "buildpacks": [
-    {
-      "url": "heroku/nodejs"
-    }
-  ]
+  }
 }
