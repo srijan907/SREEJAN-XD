@@ -1,0 +1,13 @@
+{
+  "name": "SREEJAN-XD",
+  "version": "1.0.0",
+  "description": "SREEJAN,-XD WhatsApp Bot with advanced features",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^4.0.0",
+    "pino": "^8.0.0"
+  }
+}
